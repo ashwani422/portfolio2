@@ -1,0 +1,76 @@
+//-- STARTING Built-in Modules --------------------------------------------------------------------------------
+@use 'sass:map';
+//-- ENDING Built-in Modules ----------------------------------------------------------------------------------
+
+//-- STARTING Fonts --------------------------------------------------------------------------------
+@font-face {
+  font-family: Rencho;
+  src: url('../fonts/Rancho/Rancho-Regular.ttf');
+}
+
+@font-face {
+  font-family: Comfortaa;
+  src: url('../fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url('../fonts/Quicksand/Quicksand-VariableFont_wght.ttf');
+}
+//-- ENDING Fonts ----------------------------------------------------------------------------------
+
+
+//-- STARTING Variables --------------------------------------------------------------------------------
+$breakpoint-xs: 0 !default;
+$breakpoint-sm: 576px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 992px !default;
+$breakpoint-xl: 1200px !default;
+
+$theme-colors: (
+  "primary": #540D6E,
+  "secondary": #E8C2CA,
+  "success": #28a745,
+  "info": #17a2b8,
+  "warning": #ffc107,
+  "danger": #dc3545,
+  "text": #FFFFFF,
+);
+//-- ENDING Variables ----------------------------------------------------------------------------------
+
+
+//-- STARTING Mixins --------------------------------------------------------------------------------
+
+//-- ENDING Mixins ----------------------------------------------------------------------------------
+
+
+//-- STARTING Defaults --------------------------------------------------------------------------------
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Quicksand, sans-serif;
+}
+
+html {
+  min-width: 100%;
+  min-height: 100vh;
+  background: #FFCC70;
+  background: -webkit-linear-gradient(315deg, #5a72eb 0%, #C850C0 46%, #FFCC70 100%);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(315deg, #5a72eb 0%, #C850C0 46%, #FFCC70 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: map.get($theme-colors, 'text');
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 100%;
+  min-height: 100vh;
+
+  // minimum font-size = 14px
+  // maximum font-size = 26px
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+//-- ENDING Defaults ----------------------------------------------------------------------------------

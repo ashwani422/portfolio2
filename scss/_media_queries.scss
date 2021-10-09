@@ -1,0 +1,52 @@
+//-- STARTING Partials --------------------------------------------------------------------------------
+@use './config' as *;
+//-- ENDING Partials ----------------------------------------------------------------------------------
+
+
+//-- STARTING Navbar media queries --------------------------------------------------------------------------------
+@media screen and (min-width: $breakpoint-md) {
+  header {
+
+    .container {
+      align-items: center;
+    }
+
+    i.fas {
+      display: none;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: unset;
+      background: none;
+      min-width: unset;
+      height: auto;
+
+      ul {
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+          margin-left: .5rem;
+          padding: 0;
+
+          a {
+            background: transparent;
+            padding: .2rem 1rem;
+            letter-spacing: 2px;
+            font-size: 1.2rem;
+            transition: background 1s;
+
+            &:hover {
+              background: rgba($color: #000000, $alpha: .4);
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+//-- ENDING Navbar media queries ----------------------------------------------------------------------------------

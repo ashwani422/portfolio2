@@ -1,0 +1,37 @@
+//-- STARTING Built-in Modules --------------------------------------------------------------------------------
+@use 'sass:map';
+//-- ENDING Built-in Modules ----------------------------------------------------------------------------------
+
+
+//-- STARTING Partials --------------------------------------------------------------------------------
+@use './config' as *;
+@use './navbar';
+@use './main_content';
+@use './media_queries';
+//-- ENDING Partials ----------------------------------------------------------------------------------
+
+//-- STARTING Classes --------------------------------------------------------------------------------
+.container {
+  margin: 0 auto;
+  padding:  0 1rem;
+  max-width: $breakpoint-xl;  
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-right {
+  justify-content: flex-end;
+}
+
+.section100vh {
+  min-height: 100vh;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+//-- ENDING Classes ----------------------------------------------------------------------------------

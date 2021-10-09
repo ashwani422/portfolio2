@@ -1,0 +1,92 @@
+//-- STARTING Built-in Modules --------------------------------------------------------------------------------
+@use 'sass:map';
+//-- Ending Built-in Modules ----------------------------------------------------------------------------------
+
+
+//-- STARTING Partials --------------------------------------------------------------------------------
+@use './config' as *;
+@use './animations';
+//-- Ending Partials ----------------------------------------------------------------------------------
+
+//-- STARTING Navbar Styles --------------------------------------------------------------------------------
+header {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  min-width: 100%;
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  transition: background .5s ease-in-out,
+    box-shadow .4s ease-in-out;
+
+  .container {
+    // background-color: red;
+    flex-grow: 1;
+    display: flex;
+  }
+
+  .logo {
+    // background: yellowgreen;
+    font-weight: 900;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+    flex-grow: 1;
+  }
+
+  i {
+    align-self: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  nav {
+    background: #c31432;
+    background: -webkit-linear-gradient(135deg, rgba(#c31432, .7), rgba(#240b36, .7));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(135deg, rgba(#c31432, .7), rgba(#240b36, .7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: fixed;
+    right: -100vw;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    display: none;
+    // display: flex;
+
+    i {
+      font-size: 2rem;
+      padding: 1rem;
+    }
+    
+    ul {
+      text-align: center;
+      list-style: none;
+      font-size: 2rem;
+      letter-spacing: 4px;
+      // background: #aaa;
+      // flex-grow: 1;
+      // display: flex;
+      // justify-content: flex-end;
+
+      li {
+        padding: .2rem 1rem;
+        
+        a {
+          font-family: Rencho, serif;
+          text-decoration: none;
+          display: block;
+          color: #eee;
+          background: transparent;
+          transition: background 1s;
+
+          &:hover {
+            background: rgba($color: #000000, $alpha: .4);
+          }
+        }
+      }
+    }
+  }
+}
+//-- ENDING Navbar Styles ----------------------------------------------------------------------------------
