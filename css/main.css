@@ -62,7 +62,7 @@ header {
   min-height: 4rem;
   display: flex;
   align-items: center;
-  transition: background 0.5s ease-in-out, box-shadow 0.4s ease-in-out;
+  transition: background 0.5s ease-in-out, box-shadow 0.4s ease-in-out, height 0.2s ease-in-out;
 }
 header .container {
   flex-grow: 1;
@@ -73,6 +73,7 @@ header .logo {
   letter-spacing: 4px;
   font-size: 1.5rem;
   flex-grow: 1;
+  font-weight: 900;
 }
 header i {
   align-self: center;
@@ -120,11 +121,6 @@ header nav ul li a:hover {
   background: rgba(0, 0, 0, 0.4);
 }
 
-main {
-  max-width: 100%;
-  min-height: 100vh;
-}
-
 @media screen and (min-width: 768px) {
   header .container {
     align-items: center;
@@ -160,6 +156,52 @@ main {
     background: rgba(0, 0, 0, 0.4);
   }
 }
+@media screen and (min-width: 768px) {
+  .intro-details-div {
+    align-self: center;
+  }
+}
+@media screen and (min-width: 576px) {
+  div#type_writer_div {
+    display: inline-block;
+  }
+}
+section#intro {
+  position: relative;
+  display: flex;
+}
+section#intro > .intro-details-div p {
+  font-size: 2rem;
+}
+section#intro > .intro-details-div p > .name {
+  color: #540D6E;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+section#intro > .intro-details-div .type_writer_wrapper {
+  font-size: 3rem;
+}
+section#intro > .intro-details-div #type_writer_div {
+  color: #540D6E;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+section#intro > .intro-image-div {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  align-self: center;
+}
+section#intro > .intro-image-div img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  max-width: 100%;
+  min-height: 100vh;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 1rem;

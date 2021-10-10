@@ -41,12 +41,14 @@
     
     if(scrollY >= 20) {
       header.style.background = 'rgba(0, 0, 0, .4)'
+      header.style.height = '4.2rem'
       header.style.boxShadow = '0 0 10px #000'
       header.style.backdropFilter = 'blur(2px)'
     }
 
     if(scrollY < 20) {
-      header.style.background = 'rgba(255, 255, 255, 0)'
+      header.style.background = 'rgba(255, 255, 255, 0)'      
+      header.style.height = '4rem'
       header.style.boxShadow = '0 0 0 #000'
       header.style.backdropFilter = 'blur(0)'
     }
@@ -54,5 +56,20 @@
   })
 
   //-- ENDING Events --------------------------------------------------------------------------------
+
+  //-- STARTING Type Writer Script --------------------------------------------------------------------------------
+  new Typewriter(
+    document.getElementById('type_writer_div'),
+    {
+      autoStart: true,
+      loop: true,
+      delay: 50,
+      deleteSpeed: 40,
+      pauseFor: 4000,
+      cursor: '_',
+      strings: ['Web Developer', 'Gamer'],
+    }
+  )
+  //-- ENDING Type Writer Script --------------------------------------------------------------------------------
 
 })()

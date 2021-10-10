@@ -3,20 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <!-- STARTING Fav icons -------------------------------------------------------------------------------->
   <link rel="apple-touch-icon" sizes="180x180" href="./icons/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon_io/favicon-16x16.png">
   <link rel="manifest" href="./icons/favicon_io/site.webmanifest">
   <!-- ENDING Fav icons ---------------------------------------------------------------------------------->
+
   <title>Portfolio</title>
-  <!-- STARTING Fontawesome Icons -------------------------------------------------------------------------------->
+
+  <!-- Type Writer js -->
+  <script src="./js/external/typeWriter.js"></script>
+  <!-- Fontawesome Icons -->
   <link rel="stylesheet" href="./icons/fontawesome/css/all.css">
-  <!-- ENDING Fontawesome Icons ---------------------------------------------------------------------------------->
-  <!-- STARTING External CSS -------------------------------------------------------------------------------->
+  <!-- SCSS converted css -->
   <link rel="stylesheet" href="./css/main.css">
-  <!-- ENDING External CSS ---------------------------------------------------------------------------------->
 </head>
 <body>
   <!-- STARTING Header -------------------------------------------------------------------------------->
@@ -50,7 +52,16 @@
   <!-- STARTING Main Section -------------------------------------------------------------------------------->
   <main class="container">
     <section id="intro" class="section100vh">
-      Intro section
+      <!-- Intro details DIV -->
+      <div class="intro-details-div">
+        <h1>Hello! 👋</h1>
+        <p>My name is <span class="name">Ashwani Kumar</span></p>
+        <div class="type_writer_wrapper">I'm a <div id="type_writer_div"></div></div>
+      </div>
+      <!-- Intro image DIV -->
+      <div class="intro-image-div">
+        <img src="./images/web_developer.svg" alt="image" />
+      </div>
     </section>
 
     <section id="about" class="section100vh">

@@ -50,3 +50,18 @@
   }
 }
 //-- ENDING Navbar media queries ----------------------------------------------------------------------------------
+
+
+//-- STARTING intro-details-div media queries --------------------------------------------------------------------------------
+@media screen and (min-width: $breakpoint-md) {
+  .intro-details-div {
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+  div#type_writer_div {
+    display: inline-block;
+  }
+}
+//-- ENDING intro-details-div media queries ----------------------------------------------------------------------------------

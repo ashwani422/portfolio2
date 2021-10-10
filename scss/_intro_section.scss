@@ -1,0 +1,47 @@
+//-- STARTING Partials --------------------------------------------------------------------------------
+@use './config' as *;
+// @use './animations';
+//-- Ending Partials ----------------------------------------------------------------------------------
+
+
+//-- STARTING Intro Section Styles --------------------------------------------------------------------------------
+section#intro {
+  position: relative;
+  display: flex;
+
+  & > .intro-details-div {
+    p {
+      font-size: 2rem;
+
+      & > .name {
+        color: map-get($map: $theme-colors, $key: 'primary');
+        font-size: 2.2rem;
+        font-weight: 700;
+      }
+    }
+
+    .type_writer_wrapper {
+      font-size: 3rem;
+    }
+
+    #type_writer_div {
+      color: map-get($map: $theme-colors, $key: 'primary');
+      font-size: 3.2rem;
+      font-weight: 700;
+    }
+  }
+
+  & > .intro-image-div {
+    // background: skyblue;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    align-self: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+//-- Ending Intro Section Styles ----------------------------------------------------------------------------------

@@ -18,7 +18,8 @@ header {
   display: flex;
   align-items: center;
   transition: background .5s ease-in-out,
-    box-shadow .4s ease-in-out;
+    box-shadow .4s ease-in-out,
+    height .2s ease-in-out;
 
   .container {
     // background-color: red;
@@ -32,6 +33,7 @@ header {
     letter-spacing: 4px;
     font-size: 1.5rem;
     flex-grow: 1;
+    font-weight: 900;
   }
 
   i {
