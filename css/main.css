@@ -121,6 +121,11 @@ header nav ul li a:hover {
   background: rgba(0, 0, 0, 0.4);
 }
 
+@media screen and (min-width: 576px) {
+  div#type_writer_div {
+    display: inline-block;
+  }
+}
 @media screen and (min-width: 768px) {
   header .container {
     align-items: center;
@@ -155,25 +160,19 @@ header nav ul li a:hover {
   header nav ul li a:hover {
     background: rgba(0, 0, 0, 0.4);
   }
-}
-@media screen and (min-width: 768px) {
+
   .intro-details-div {
     align-self: center;
-  }
-}
-@media screen and (min-width: 576px) {
-  div#type_writer_div {
-    display: inline-block;
   }
 }
 section#intro {
   position: relative;
   display: flex;
 }
-section#intro > .intro-details-div p {
+section#intro > .intro-details-div > p {
   font-size: 2rem;
 }
-section#intro > .intro-details-div p > .name {
+section#intro > .intro-details-div > p > .name {
   color: #540D6E;
   font-size: 2.2rem;
   font-weight: 700;
@@ -185,6 +184,19 @@ section#intro > .intro-details-div #type_writer_div {
   color: #540D6E;
   font-size: 3.2rem;
   font-weight: 700;
+}
+section#intro > .intro-details-div > .social-media-wrapper {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+section#intro > .intro-details-div > .social-media-wrapper > a {
+  margin: 0.5rem;
+  font-size: 2rem;
+  color: #E8C2CA;
+  transition: 0.5s ease-in-out;
+}
+section#intro > .intro-details-div > .social-media-wrapper > a:hover {
+  color: #FFFFFF;
 }
 section#intro > .intro-image-div {
   position: absolute;
@@ -200,6 +212,11 @@ section#intro > .intro-image-div img {
 main {
   max-width: 100%;
   min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 .container {
@@ -218,6 +235,11 @@ main {
 
 .flex-right {
   justify-content: flex-end;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
 }
 
 .section100vh {

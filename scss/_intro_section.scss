@@ -10,7 +10,7 @@ section#intro {
   display: flex;
 
   & > .intro-details-div {
-    p {
+    & > p {
       font-size: 2rem;
 
       & > .name {
@@ -28,6 +28,22 @@ section#intro {
       color: map-get($map: $theme-colors, $key: 'primary');
       font-size: 3.2rem;
       font-weight: 700;
+    }
+
+    & > .social-media-wrapper {
+      margin-top: 1rem;
+      font-size: 1rem;
+      
+      & > a {
+        margin: .5rem;;
+        font-size: 2rem;
+        color: map-get($map: $theme-colors, $key: 'secondary');
+        @include transition_5ms_ease_in_out;
+
+        &:hover {
+          color: map-get($map: $theme-colors, $key: 'text');
+        }
+      }
     }
   }
 

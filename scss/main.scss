@@ -16,6 +16,11 @@ main {
   max-width: 100%;
   min-height: 100vh;
 }
+
+a {
+  text-decoration: none;
+  color: map-get($map: $theme-colors, $key: 'text');
+}
 //-- ENDING Defaults ----------------------------------------------------------------------------------
 
 
@@ -36,6 +41,11 @@ main {
 
 .flex-right {
   justify-content: flex-end;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
 }
 
 .section100vh {
