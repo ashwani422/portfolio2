@@ -62,7 +62,7 @@ header {
   min-height: 4rem;
   display: flex;
   align-items: center;
-  transition: background 0.5s ease-in-out, box-shadow 0.4s ease-in-out, height 0.2s ease-in-out;
+  transition: background 0.5s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 header .container {
   flex-grow: 1;
@@ -197,16 +197,6 @@ section#intro > .intro-details-div > .social-media-wrapper > a {
 }
 section#intro > .intro-details-div > .social-media-wrapper > a:hover {
   color: #FFFFFF;
-}
-section#intro > .intro-image-div {
-  position: absolute;
-  right: 0;
-  z-index: -1;
-  align-self: center;
-}
-section#intro > .intro-image-div img {
-  max-width: 100%;
-  height: auto;
 }
 
 main {

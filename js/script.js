@@ -41,14 +41,12 @@
     
     if(scrollY >= 20) {
       header.style.background = 'rgba(0, 0, 0, .4)'
-      header.style.height = '4.2rem'
       header.style.boxShadow = '0 0 10px #000'
-      header.style.backdropFilter = 'blur(2px)'
+      header.style.backdropFilter = 'blur(10px)'
     }
 
     if(scrollY < 20) {
-      header.style.background = 'rgba(255, 255, 255, 0)'      
-      header.style.height = '4rem'
+      header.style.background = 'rgba(255, 255, 255, 0)' 
       header.style.boxShadow = '0 0 0 #000'
       header.style.backdropFilter = 'blur(0)'
     }

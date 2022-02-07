@@ -46,18 +46,5 @@ section#intro {
       }
     }
   }
-
-  & > .intro-image-div {
-    // background: skyblue;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    align-self: center;
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  }
 }
 //-- Ending Intro Section Styles ----------------------------------------------------------------------------------
