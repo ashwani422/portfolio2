@@ -6,12 +6,12 @@
 //-- STARTING Partials --------------------------------------------------------------------------------
 @use './config' as *;
 @use './navbar';
-@use './media_queries';
 @use './intro_section';
 @use './skills_section';
 @use './projects_section';
 @use './contact_section';
 @use './footer';
+@use './media_queries';
 //-- ENDING Partials ----------------------------------------------------------------------------------
 
 

@@ -45,7 +45,7 @@
       & > a {
         margin: .5rem;;
         font-size: 2rem;
-        color: map-get($map: $theme-colors, $key: 'secondary');
+        color: #dddddd;
         @include transition_5ms_ease_in_out;
 
         &:hover {
