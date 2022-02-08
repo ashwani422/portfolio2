@@ -35,7 +35,6 @@ html {
 body {
   min-width: 100%;
   min-height: 100vh;
-  font-size: calc(14px + 12 * (100vw - 300px) / 1300);
 }
 
 @keyframes SlideInFromRight {
@@ -118,12 +117,13 @@ header nav ul li a {
   transition: background 1s;
 }
 header nav ul li a:hover {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (min-width: 576px) {
   div#type_writer_div {
     display: inline-block;
+    min-width: 350px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -160,48 +160,69 @@ header nav ul li a:hover {
   header nav ul li a:hover {
     background: rgba(0, 0, 0, 0.4);
   }
-
-  .intro-details-div {
-    align-self: center;
-  }
 }
-section#intro {
+#intro {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
   position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-section#intro > .intro-details-div > p {
+#intro > .intro-details-div > p {
   font-size: 2rem;
 }
-section#intro > .intro-details-div > p > .name {
+#intro > .intro-details-div > p > .name {
   color: #540D6E;
-  font-size: 2.2rem;
   font-weight: 700;
 }
-section#intro > .intro-details-div .type_writer_wrapper {
-  font-size: 3rem;
+#intro > .intro-details-div .type_writer_wrapper {
+  font-size: 2.5rem;
 }
-section#intro > .intro-details-div #type_writer_div {
+#intro > .intro-details-div #type_writer_div {
   color: #540D6E;
-  font-size: 3.2rem;
   font-weight: 700;
 }
-section#intro > .intro-details-div > .social-media-wrapper {
+#intro > .intro-details-div > .social-media-wrapper {
   margin-top: 1rem;
   font-size: 1rem;
 }
-section#intro > .intro-details-div > .social-media-wrapper > a {
+#intro > .intro-details-div > .social-media-wrapper p {
+  margin-bottom: 0.5rem;
+}
+#intro > .intro-details-div > .social-media-wrapper > a {
   margin: 0.5rem;
   font-size: 2rem;
   color: #E8C2CA;
   transition: 0.5s ease-in-out;
 }
-section#intro > .intro-details-div > .social-media-wrapper > a:hover {
+#intro > .intro-details-div > .social-media-wrapper > a:hover {
   color: #FFFFFF;
 }
 
+#skills {
+  padding: 1rem;
+}
+
+#projects {
+  padding: 1rem;
+}
+
+#contactme {
+  padding: 1rem;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  text-align: center;
+}
+
 main {
-  max-width: 100%;
-  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
 }
 
 a {
@@ -232,10 +253,8 @@ a {
   display: inline-block;
 }
 
-.section100vh {
+.h-screen {
   min-height: 100vh;
-  padding-top: 5rem;
-  padding-bottom: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

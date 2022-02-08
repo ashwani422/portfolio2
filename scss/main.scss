@@ -8,13 +8,16 @@
 @use './navbar';
 @use './media_queries';
 @use './intro_section';
+@use './skills_section';
+@use './projects_section';
+@use './contact_section';
+@use './footer';
 //-- ENDING Partials ----------------------------------------------------------------------------------
 
 
 //-- STARTING Defaults --------------------------------------------------------------------------------
 main {
-  max-width: 100%;
-  min-height: 100vh;
+  @include bg-black-transparent();
 }
 
 a {
@@ -48,9 +51,7 @@ a {
   display: inline-block;
 }
 
-.section100vh {
+.h-screen {
   min-height: 100vh;
-  padding-top: 5rem;
-  padding-bottom: 1rem;
 }
 //-- ENDING Classes ----------------------------------------------------------------------------------

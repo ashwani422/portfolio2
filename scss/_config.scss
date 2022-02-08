@@ -43,6 +43,11 @@ $theme-colors: (
 @mixin transition_5ms_ease_in_out {
   transition: .5s ease-in-out;
 }
+
+@mixin bg-black-transparent($t-level: 0.4) {
+  background: rgba($color: #000000, $alpha: $t-level);
+  backdrop-filter: blur(10px);
+}
 //-- ENDING Mixins ----------------------------------------------------------------------------------
 
 
@@ -73,6 +78,6 @@ body {
 
   // minimum font-size = 14px
   // maximum font-size = 26px
-  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  // font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 //-- ENDING Defaults ----------------------------------------------------------------------------------
