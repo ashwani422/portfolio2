@@ -48,6 +48,10 @@ $theme-colors: (
   background: rgba($color: #000000, $alpha: $t-level);
   backdrop-filter: blur(10px);
 }
+@mixin bg-white-transparent($t-level: 0.4) {
+  background: rgba($color: #FFFFFF, $alpha: $t-level);
+  backdrop-filter: blur(10px);
+}
 //-- ENDING Mixins ----------------------------------------------------------------------------------
 
 

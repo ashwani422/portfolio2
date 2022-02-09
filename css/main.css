@@ -170,11 +170,11 @@ header nav ul li a:hover {
   display: grid;
   justify-items: center;
   align-items: center;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template: auto/repeat(2, 1fr);
 }
 #skills div.skills-div > div {
-  font-size: 2rem;
+  padding: 0.5rem;
+  display: inline-block;
 }
 
 #projects {
@@ -198,9 +198,8 @@ footer {
     min-width: 350px;
   }
 
-  div.skills-div {
-    background: red;
-    grid-template-columns: repeat(3, 1fr);
+  #skills div.skills-div {
+    grid-template: auto/repeat(3, 1fr);
   }
 }
 @media (min-width: 768px) {
@@ -236,6 +235,20 @@ footer {
   }
   header nav ul li a:hover {
     background: rgba(0, 0, 0, 0.4);
+  }
+
+  #skills div.skills-div {
+    grid-template: auto/repeat(4, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  #skills div.skills-div {
+    grid-template: auto/repeat(5, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  #skills div.skills-div {
+    grid-template: auto/repeat(6, 1fr);
   }
 }
 main {

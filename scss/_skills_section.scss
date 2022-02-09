@@ -1,3 +1,5 @@
+@use './config' as *;
+
 #skills {
   padding: 1rem;
 
@@ -6,15 +8,16 @@
   }
 
   div.skills-div {
-    // max-width: 100%;
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(2, 1fr);
-
+    grid-template: auto / repeat(2, 1fr);
+    
+    
     & > div {
-      font-size: 2rem;
+      padding: .5rem;
+      display: inline-block;
     }
   }
+
 }

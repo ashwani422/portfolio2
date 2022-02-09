@@ -14,9 +14,10 @@
   }
   //-- ENDING intro-details-div media queries ----------------------------------------------------------------------------------
 
-  div.skills-div {
-    background: red;
-    grid-template-columns: repeat(3, 1fr);
+  #skills {
+    div.skills-div {
+      grid-template: auto / repeat(3, 1fr);
+    }
   }
 }
 
@@ -73,6 +74,12 @@
 
   }
   //-- ENDING Navbar media queries ----------------------------------------------------------------------------------  
+
+  #skills {
+    div.skills-div {
+      grid-template: auto / repeat(4, 1fr);
+    }
+  }
 }
 
 
@@ -80,9 +87,13 @@
 //----------------------------------------------------------------------------------------------------
 //-- Breakpoint > Large(lg)
 //----------------------------------------------------------------------------------------------------
-// @media (min-width: $breakpoint-lg) {
-  
-// }
+@media (min-width: $breakpoint-lg) {
+  #skills {
+    div.skills-div {
+      grid-template: auto / repeat(5, 1fr);
+    }
+  } 
+}
 
 
 
@@ -90,6 +101,10 @@
 //----------------------------------------------------------------------------------------------------
 //-- Breakpoint > Xtra Large(xl)
 //----------------------------------------------------------------------------------------------------
-// @media (min-width: $breakpoint-lg) {
-  
-// }
+@media (min-width: $breakpoint-xl) {
+  #skills {
+    div.skills-div {
+      grid-template: auto / repeat(6, 1fr);
+    }
+  } 
+}
