@@ -16,18 +16,19 @@
 
 
 //-- STARTING Defaults --------------------------------------------------------------------------------
-main {
-  @include bg-black-transparent();
+// main {
+//   @include bg-black-transparent(0.3);
 
-  & > section > h1 {
-    font-size: 2rem;
-    letter-spacing: 1px;
-  }
-}
+//   & > section > h1 {
+//     font-size: 2rem;
+//     letter-spacing: 1px;
+//   }
+// }
 
 a {
   text-decoration: none;
   color: map-get($map: $theme-colors, $key: 'text');
+  cursor: pointer;
 }
 //-- ENDING Defaults ----------------------------------------------------------------------------------
 
