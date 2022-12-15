@@ -20,11 +20,8 @@
 html {
   min-width: 100%;
   min-height: 100vh;
-  background: #FFCC70;
-  background: -webkit-linear-gradient(315deg, #5a72eb 0%, #C850C0 46%, #FFCC70 100%);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(315deg, #5a72eb 0%, #C850C0 46%, #FFCC70 100%);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #FFCC70; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(315deg, #5a72eb 0%, #C850C0 46%, #FFCC70 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -37,12 +34,29 @@ body {
   min-height: 100vh;
 }
 
+@-webkit-keyframes SlideInFromRight {
+  0% {
+    right: -100vw;
+  }
+  100% {
+    right: 0;
+  }
+}
+
 @keyframes SlideInFromRight {
   0% {
     right: -100vw;
   }
   100% {
     right: 0;
+  }
+}
+@-webkit-keyframes SlideOutToRight {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -100vw;
   }
 }
 @keyframes SlideOutToRight {
@@ -80,11 +94,8 @@ header i {
   cursor: pointer;
 }
 header nav {
-  background: #c31432;
-  background: -webkit-linear-gradient(135deg, rgba(195, 20, 50, 0.7), rgba(36, 11, 54, 0.7));
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(135deg, rgba(195, 20, 50, 0.7), rgba(36, 11, 54, 0.7));
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #c31432; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(135deg, rgba(195, 20, 50, 0.7), rgba(36, 11, 54, 0.7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -129,6 +140,16 @@ header nav ul li a:hover {
   justify-content: center;
   align-items: center;
 }
+#intro > .intro-details-div > img {
+  width: 200px;
+  height: 200px;
+  -o-object-position: 0 -15px;
+     object-position: 0 -15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #540D6E;
+}
 #intro > .intro-details-div > p {
   font-size: 2rem;
 }
@@ -162,7 +183,8 @@ header nav ul li a:hover {
 
 #skills {
   background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
   margin-bottom: 2rem;
   padding: 1rem;
@@ -184,7 +206,8 @@ header nav ul li a:hover {
 
 #projects {
   background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
   margin-bottom: 2rem;
   padding: 1rem;
@@ -208,7 +231,8 @@ header nav ul li a:hover {
 #projects > .projects-wrapper > .project-box > .img-box > img {
   max-width: 100%;
   height: auto;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #projects > .projects-wrapper > .project-box > .text-box {
   display: flex;
@@ -232,7 +256,8 @@ header nav ul li a:hover {
 
 #contactme {
   background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
   margin-bottom: 2rem;
   padding: 1rem;
@@ -244,7 +269,8 @@ header nav ul li a:hover {
 
 footer {
   background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   padding: 1rem;
   text-align: center;
   letter-spacing: 1px;
@@ -259,7 +285,6 @@ footer span.name {
     display: inline-block;
     min-width: 350px;
   }
-
   #skills div.skills-div {
     grid-template: auto/repeat(3, 1fr);
   }
@@ -298,7 +323,6 @@ footer span.name {
   header nav ul li a:hover {
     background: rgba(0, 0, 0, 0.4);
   }
-
   #skills div.skills-div {
     grid-template: auto/repeat(4, 1fr);
   }
@@ -344,6 +368,4 @@ a {
 
 .h-screen {
   min-height: 100vh;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

@@ -16,6 +16,15 @@
 
   & > .intro-details-div {
 
+    & > img {
+      width: 200px;
+      height: 200px;
+      object-position: 0 -15px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid map-get($map: $theme-colors, $key: 'primary');
+    }
+
     & > p {
       font-size: 2rem;
 
