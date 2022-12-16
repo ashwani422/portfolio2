@@ -2,10 +2,11 @@
 
 #projects {
   @include bg-black-transparent(0.2);
-  box-shadow: 10px 10px 20px rgba($color: #000000, $alpha: 0.5);
+  box-shadow: 10px 10px 20px rgba($color: #000000, $alpha: 0.4);
+  border-radius: 5px;
 
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 2rem;
 
   & > h1 {
     margin-bottom: 2rem;

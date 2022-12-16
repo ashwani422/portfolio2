@@ -23,6 +23,7 @@
       object-fit: cover;
       border-radius: 50%;
       border: 2px solid map-get($map: $theme-colors, $key: 'primary');
+      box-shadow: 10px 10px 20px rgb(0 0 0 / 50%);
     }
 
     & > p {

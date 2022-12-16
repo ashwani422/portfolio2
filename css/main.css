@@ -149,6 +149,7 @@ header nav ul li a:hover {
      object-fit: cover;
   border-radius: 50%;
   border: 2px solid #540D6E;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 #intro > .intro-details-div > p {
   font-size: 2rem;
@@ -181,13 +182,31 @@ header nav ul li a:hover {
   color: #FFFFFF;
 }
 
+#about_me {
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+#about_me > h1 {
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+#about_me p {
+  letter-spacing: 1px;
+}
+
 #skills {
   background: rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 #skills > h1 {
   margin-bottom: 2rem;
@@ -208,9 +227,10 @@ header nav ul li a:hover {
   background: rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 #projects > h1 {
   margin-bottom: 2rem;
@@ -258,9 +278,10 @@ header nav ul li a:hover {
   background: rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 #contactme > h1 {
   margin-bottom: 2rem;
