@@ -83,8 +83,8 @@ header .container {
 }
 header .logo {
   font-weight: 900;
-  letter-spacing: 4px;
-  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-size: 2rem;
   flex-grow: 1;
   font-weight: 900;
 }
@@ -167,7 +167,7 @@ header nav ul li a:hover {
 }
 #intro > .intro-details-div > .social-media-wrapper {
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 #intro > .intro-details-div > .social-media-wrapper p {
   margin-bottom: 0.5rem;
@@ -338,7 +338,7 @@ footer span.name {
     background: transparent;
     padding: 0.2rem 1rem;
     letter-spacing: 2px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     transition: background 1s;
   }
   header nav ul li a:hover {
