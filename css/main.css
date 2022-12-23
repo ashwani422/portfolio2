@@ -193,26 +193,15 @@ header nav ul li a:hover {
 }
 #about_me > h1 {
   margin-bottom: 2rem;
+  padding: 0.5em 1em;
   letter-spacing: 1px;
+  background: rgba(0, 0, 0, 0.4);
 }
 #about_me p {
   letter-spacing: 1px;
   font-size: 1.2rem;
 }
 
-#skills {
-  background: rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-  margin-bottom: 2rem;
-  padding: 2rem;
-}
-#skills > h1 {
-  margin-bottom: 2rem;
-  letter-spacing: 1px;
-}
 #skills div.skills-div {
   display: grid;
   justify-items: center;
@@ -224,19 +213,6 @@ header nav ul li a:hover {
   display: inline-block;
 }
 
-#projects {
-  background: rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-  margin-bottom: 2rem;
-  padding: 2rem;
-}
-#projects > h1 {
-  margin-bottom: 2rem;
-  letter-spacing: 1px;
-}
 #projects > .projects-wrapper > .project-box {
   position: relative;
   display: inline-block;
@@ -273,20 +249,6 @@ header nav ul li a:hover {
 }
 #projects > .projects-wrapper > .project-box:hover > .text-box {
   transform: scaleY(1);
-}
-
-#contactme {
-  background: rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-  margin-bottom: 2rem;
-  padding: 2rem;
-}
-#contactme > h1 {
-  margin-bottom: 2rem;
-  letter-spacing: 1px;
 }
 
 footer {
@@ -390,4 +352,20 @@ a {
 
 .h-screen {
   min-height: 100vh;
+}
+
+.main-section {
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+.main-section > h1 {
+  margin-bottom: 2rem;
+  padding: 0.5em 1em;
+  letter-spacing: 1px;
+  background: rgba(0, 0, 0, 0.4);
 }/*# sourceMappingURL=main.css.map */
