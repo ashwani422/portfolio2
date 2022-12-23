@@ -16,6 +16,16 @@
 
   & > .intro-details-div {
 
+    & > img {
+      width: 200px;
+      height: 200px;
+      object-position: 0 -15px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid map-get($map: $theme-colors, $key: 'primary');
+      box-shadow: 10px 10px 20px rgb(0 0 0 / 50%);
+    }
+
     & > p {
       font-size: 2rem;
 
@@ -36,7 +46,7 @@
 
     & > .social-media-wrapper {
       margin-top: 1rem;
-      font-size: 1rem;
+      font-size: 1.2rem;
 
       p {
         margin-bottom: .5rem;

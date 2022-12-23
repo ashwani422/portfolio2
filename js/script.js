@@ -39,13 +39,13 @@
   // Shows/hides header background on scrolling
   document.addEventListener('scroll', e => {
     
-    if(scrollY >= 20) {
+    if(scrollY >= 10) {
       header.style.background = 'rgba(0, 0, 0, .4)'
       header.style.boxShadow = '0 0 10px #000'
       header.style.backdropFilter = 'blur(10px)'
     }
 
-    if(scrollY < 20) {
+    if(scrollY < 10) {
       header.style.background = 'rgba(255, 255, 255, 0)' 
       header.style.boxShadow = '0 0 0 #000'
       header.style.backdropFilter = 'blur(0)'
