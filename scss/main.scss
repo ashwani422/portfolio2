@@ -31,14 +31,15 @@ a {
   color: map-get($map: $theme-colors, $key: 'text');
   cursor: pointer;
 }
+
 //-- ENDING Defaults ----------------------------------------------------------------------------------
 
 
 //-- STARTING Classes --------------------------------------------------------------------------------
 .container {
   margin: 0 auto;
-  padding:  0 1rem;
-  max-width: $breakpoint-xl;  
+  padding: 0 1rem;
+  max-width: $breakpoint-xl;
 }
 
 .flex {
@@ -63,18 +64,19 @@ a {
 }
 
 .main-section {
-  @include bg-black-transparent(0.2);
-  box-shadow: 10px 10px 20px rgba($color: #000000, $alpha: 0.4);
+  @include bg-black-transparent(0.4);
+  // box-shadow: 10px 10px 20px rgba($color: #000000, $alpha: 0.4);
   border-radius: 5px;
 
   margin-bottom: 2rem;
   padding: 2rem;
 
-  & > h1 {
+  &>h1 {
     margin-bottom: 2rem;
     padding: .5em 1em;
     letter-spacing: 1px;
     background: rgba($color: #000000, $alpha: 0.4);
   }
 }
+
 //-- ENDING Classes ----------------------------------------------------------------------------------
