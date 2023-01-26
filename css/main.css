@@ -143,8 +143,6 @@ header nav ul li a:hover {
 #intro > .intro-details-div > img {
   width: 200px;
   height: 200px;
-  -o-object-position: 0 -15px;
-     object-position: 0 -15px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
@@ -182,21 +180,6 @@ header nav ul li a:hover {
   color: #FFFFFF;
 }
 
-#about_me {
-  background: rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-  margin-bottom: 2rem;
-  padding: 2rem;
-}
-#about_me > h1 {
-  margin-bottom: 2rem;
-  padding: 0.5em 1em;
-  letter-spacing: 1px;
-  background: rgba(0, 0, 0, 0.4);
-}
 #about_me p {
   letter-spacing: 1px;
   font-size: 1.2rem;
@@ -355,10 +338,9 @@ a {
 }
 
 .main-section {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   margin-bottom: 2rem;
   padding: 2rem;

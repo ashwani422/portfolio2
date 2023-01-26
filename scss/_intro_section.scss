@@ -14,22 +14,22 @@
   justify-content: center;
   align-items: center;
 
-  & > .intro-details-div {
+  &>.intro-details-div {
 
-    & > img {
+    &>img {
       width: 200px;
       height: 200px;
-      object-position: 0 -15px;
+      // object-position: 0 -15px;
       object-fit: cover;
       border-radius: 50%;
       border: 2px solid map-get($map: $theme-colors, $key: 'primary');
       box-shadow: 10px 10px 20px rgb(0 0 0 / 50%);
     }
 
-    & > p {
+    &>p {
       font-size: 2rem;
 
-      & > .name {
+      &>.name {
         color: map-get($map: $theme-colors, $key: 'primary');
         font-weight: 700;
       }
@@ -44,16 +44,17 @@
       font-weight: 700;
     }
 
-    & > .social-media-wrapper {
+    &>.social-media-wrapper {
       margin-top: 1rem;
       font-size: 1.2rem;
 
       p {
         margin-bottom: .5rem;
       }
-      
-      & > a {
-        margin: .5rem;;
+
+      &>a {
+        margin: .5rem;
+        ;
         font-size: 2rem;
         color: #dddddd;
         @include transition_5ms_ease_in_out;
@@ -65,4 +66,5 @@
     }
   }
 }
+
 //-- Ending Intro Section Styles ----------------------------------------------------------------------------------
